@@ -12,6 +12,8 @@ In order to develop this, you have to go into the .env file and enter your root 
 ## Usage
 To use it, you have to enable it by typing node server.js into your terminal and follow the upcoming prompts given to you.
 
+https://drive.google.com/file/d/18TtX-zhReZnDL4xSuMH76reJSpFkQjh7/view 
+
 ## License
 MIT
 MIT License
