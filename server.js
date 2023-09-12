@@ -58,7 +58,7 @@ function addDepartment() {
         .then(answer => {
             db.query(`INSERT INTO department (name) VALUES ("${answer.departmentName}");`)
             console.log('wow what a nerdy department name');
-            start()
+            start();
         })
 };
 
@@ -89,7 +89,7 @@ function addEmployee() {
             db.query(`INSERT INTO employee (first_name, last_name, role_id, manager_id)
         VALUES ("${answer.first_name}","${answer.last_name}","${answer.role_id}","${answer.manager_id}");`)
             console.log('wow what a nerd');
-            start()
+            start();
         })
 };
 
@@ -115,7 +115,7 @@ function addRole() {
             db.query(`INSERT INTO role (title, salary, department_id)
         VALUES ("${answer.title}","${answer.salary}","${answer.department_id}");`)
             console.log('wow what a nerd');
-            start()
+            start();
         })
 };
 
