@@ -7,6 +7,7 @@ db.connect((err) => {
       console.log(err);
     }
     console.log('MySql Connected');
+    start()
   });
 
 function start() {
@@ -15,11 +16,12 @@ function start() {
         name: 'action',
         message: 'Select an option.',
         choices: ['View all departments', 'View all roles', 'View all employees', 'Add a department', 'Add a role', 'Add an employee', 'Update an employee']
-            .then(userChoice)
     })
+    
+.then(handleUserResponse);
 };
 
-function userChoice(answer) {
+function handleUserResponse(answer) {
     switch (answer.action) {
         case 'View all departments':
             return viewAll('department');
