@@ -142,7 +142,7 @@ async function updateEmployee() {
                 type: 'list',
                 name: 'role',
                 message: 'What is their new role id?',
-                choices: p.map(r => r.id)
+                choices: p.map(r => r.title)
             }
         ])
             .then(answer => {
